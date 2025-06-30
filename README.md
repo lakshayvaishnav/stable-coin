@@ -1,6 +1,8 @@
-Stable coin contract - will be building using Rust and solana libraries.
+## Stablecoin Smart Contract (Solana + Rust)
 
-## Features to be added
-[] - deposit collateral and mint tokens
-[] - redeem collateral and burn tokens
-[] - liquidate pool to get yield
+This smart contract enables minting and burning of a stablecoin backed by collateral on the Solana blockchain.
+
+### ✅ Planned Features
+- [ ] Deposit collateral and mint stablecoins
+- [ ] Redeem collateral and burn stablecoins
+- [ ] Liquidate collateral pool to extract yield
