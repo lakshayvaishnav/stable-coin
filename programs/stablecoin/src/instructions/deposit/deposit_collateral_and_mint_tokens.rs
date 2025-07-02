@@ -39,6 +39,7 @@ pub struct DepositCollateralandMintTokens<'info> {
         bump,
     )]
     // ⚠️⚠️⚠️ edge case : this should'nt be a system account in future make it a vault or somehting...
+    // and (gpt says need to do depsoti with the cpi you can't increase lamports directly...)
     pub sol_account: SystemAccount<'info>,
 
     // associated token account for the stable coin
@@ -64,7 +65,7 @@ pub fn process_deposit_collateral_and_mint_tokens(
     let collateral_account = &mut ctx.accounts.collateral_account;
 
     collateral_account.lmaport_balance = ctx.accounts.sol_account.lamports() + amount_collateral;
-    collateral_account.amount_minted  += amount_to_mint;
+    collateral_account.amount_minted += amount_to_mint;
 
     if !collateral_account.is_initialized {
         collateral_account.is_initialized = true;
