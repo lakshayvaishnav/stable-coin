@@ -4,5 +4,7 @@ use anchor_lang::prelude::*;
 pub enum CustomErrorCode {
     #[msg("Invalid Price")]
     InvalidPrice,
+    #[msg("health factor is less, need to liquidate the collateral")]
+    BelowMinHealthFacotor,
 
 }
