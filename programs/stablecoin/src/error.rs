@@ -6,5 +6,7 @@ pub enum CustomErrorCode {
     InvalidPrice,
     #[msg("health factor is less, need to liquidate the collateral")]
     BelowMinHealthFacotor,
+    #[msg("no need to liquidate , account is healthy")]
+    AboveMinHealthFactor
 
 }

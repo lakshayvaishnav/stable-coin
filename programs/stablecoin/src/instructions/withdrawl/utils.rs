@@ -19,7 +19,7 @@ pub fn burn_tokens<'info>(
     };
 
     let cpi_context = CpiContext::new(token_program.to_account_info(), cpi_accounts);
-    token_2022::burn(cpi_context, amount_to_burn);
+    token_2022::burn(cpi_context, amount_to_burn)?;
     Ok(())
 }
 
