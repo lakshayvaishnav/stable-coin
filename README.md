@@ -44,6 +44,3 @@ This is a stablecoin smart contract built with **Rust** and the **Anchor framewo
 ```bash
 anchor build
 
-
-## Project Structure
-
