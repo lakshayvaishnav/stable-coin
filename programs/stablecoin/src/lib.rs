@@ -1,4 +1,7 @@
+#![allow(unexpected_cfgs)]
+#![allow(deprecated)]
 use anchor_lang::prelude::*;
+
 
 pub mod state;
 pub mod instructions;
@@ -8,6 +11,7 @@ pub mod error;
 pub use error::*;
 pub use instructions::*;
 declare_id!("He6UwBtt2bHyi4EsvYMSq6BrepQFWxMdSircNLkNij7w");
+
 
 #[program]
 pub mod stablecoin {

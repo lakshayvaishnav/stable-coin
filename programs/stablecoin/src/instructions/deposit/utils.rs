@@ -23,7 +23,7 @@ pub fn mint_tokens<'info>(
             signer_seeds
         ),
         amount
-    );
+    )?;
 
     Ok(())
 }

@@ -4,7 +4,7 @@ use pyth_solana_receiver_sdk::price_update::PriceUpdateV2;
 use crate::{
     burn_tokens,
     check_health_factor,
-    constants::{ SEED_COLLATERAL_ACCOUNT, SEED_CONFIG_ACCOUNT, SEED_MINT_ACCOUNT },
+    constants::{ SEED_COLLATERAL_ACCOUNT, SEED_CONFIG_ACCOUNT },
     redeem_collateral,
     state::{ Collateral, Config },
 };
